@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script language="javascript" type="text/javascript" src="script/config.js"></script>
+  <script language="javascript" type="text/javascript" src="script/class.js"></script>
+  <script language="javascript" type="text/javascript" src="script/functions.js"></script>
+  <script language="javascript" type="text/javascript" src="script/script.js"></script>
+</head>
+
+<body>
+  <div id="start" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeStart" class="close">&times;</span>
+      <h1>Jouons !</h1>
+      <h3>Collecte toutes les clés pour débloquer l'étoile !</h3>
+      <button type="button" id="lvl1" disabled>Niveau 1</button>
+      <button type="button" id="lvl2" disabled>Niveau 2</button>
+      <button type="button" id="lvl3" disabled>Niveau 3</button>
+      <h4>ou</h4>
+      <form>
+        <input type="text" name="data" id="data" placeholder="Insère un lien pour charger le niveau personnalisé">
+        <input type="submit" value="Charger" id="submit">
+      </form>
+    </div>
+  </div>
+  <div id="getLink" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeLink" class="close">&times;</span>
+      <input type="text" value="" id="link">
+      </p>
+      <button type="button" id="OK">Appuie pour copier le lien</button>
+    </div>
+  </div>
+  <div id="build" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeBuild" class="close">&times;</span>
+      <h1>Tu as gagné ! Maintenant crée ton niveau personnalisé</h1>
+      <button type="button" id="letsstart">Allons-y</button>
+    </div>
+  </div>
+  <div id="save" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeSave" class="close">&times;</span>
+      <h1 class="message">Tu as gagné !</h1>
+      <h1 class="message">Appuie sur sauvegarder pour créer ton lien personnalisé</h1>
+      <button type="button" id="saveButton">Sauvegarder</button>
+    </div>
+  </div>
+  <div id="delete" class="modal hidden">
+    <div class="modal-content">
+      <h1>Ceci supprimera ton niveau, es-tu sûr ?</h1>
+      <button type="button" id="yes">Oui</button>
+      <button type="button" id="no">Non</button>
+    </div>
+  </div>
+
+  <script language="javascript" type="text/javascript" src="script/popup.js"></script>
+
+</body>
+
+
+</html>
